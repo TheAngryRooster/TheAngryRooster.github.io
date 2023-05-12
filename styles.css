@@ -1,0 +1,72 @@
+/* 
+Implementing color var() later on.
+:root {
+  --bodybg: #f0f0f0;
+  --containerbg: #4d4d4d;
+  --notebuttonbg: #007bff;
+  --nbuttonhover: #0056b3;
+ Basically a Placeholder for now, at least until i work out the color schemes i want to use
+} */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #4d4d4d;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.p1 {
+  text-align: center;
+  
+}
+
+.notes-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.notes-textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.notes-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.notes-button:hover {
+  background-color: #0056b3;
+}
+
+.notes-preview {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
